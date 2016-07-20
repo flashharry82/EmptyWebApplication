@@ -1,0 +1,11 @@
+---
+version: '2'
+services:
+  common:
+    build: "."
+  app:
+    extends:
+      service: common
+    ports:
+    - 5000:5000
+    command: dotnet run

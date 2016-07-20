@@ -1,0 +1,22 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "",
+      "target_num_containers": 1,
+      "sequential_deployment": true,
+      "autorestart": "ALWAYS",
+      "autoredeploy": true,
+      "container_ports": [
+        {
+          "protocol": "tcp",
+          "inner_port": 5000,
+          "published": true,
+          "outer_port": 1125
+        }
+      ],
+      "container_envvars": null
+    }
+  ],
+  "name": "flashharry82EmptyWebApplication"
+}

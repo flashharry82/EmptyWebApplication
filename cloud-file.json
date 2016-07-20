@@ -12,7 +12,7 @@
           "protocol": "tcp",
           "inner_port": 5000,
           "published": true,
-          "outer_port": 1125
+          "outer_port": 80
         }
       ],
       "container_envvars": null
